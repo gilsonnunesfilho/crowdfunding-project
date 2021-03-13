@@ -1,273 +1,271 @@
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-/* PADRÕES ----------------------*/
-
-:root {
-  --primary-color: #ffffff;
-  --acent-color: #3cb4ab;
-  --acent-color-variant: #157a74;
-  --secondary-color: rgba(0, 0, 0, 0.87);
-  --medium-emphasis: rgba(0, 0, 0, 0.6);
-  --low-emphasis: rgba(0, 0, 0, 0.38);
-  --background-color: #fafafa;
-  --surface-color: #fff;
-  --stroke-color: rgba(0, 0, 0, 0.15);
-}
-
-/* RESET ----------------------*/
+/*CSS RESET----------------------*/
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style-type: none;
-  outline: none;
-  border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    border: none;
+    color: var(--secondarycolor);
+    font-family: 'Commissioner', sans-serif;
 }
 
-/* GLOBAL ----------------------*/
+/*CSS RESET----------------------*/
 
-html {
-  height: 100%;
+/*PADRÕES----------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primarycolor: #ffffff;
+    --acentcolor: #3cb4ab;
+    --acentcolorvariant: #157a74;
+    --secondarycolor: rgba(0, 0, 0, 0.87);
+    --mediumemphasis: rgba(0, 0, 0, 0.60);
+    --lowemphasis: rgba(0, 0, 0, 0.38);
+    --backgroundcolor: #fafafa;
+    --surfacecolor: #fff;
+    --strokecolor: rgba(0, 0, 0, 0.15);
 }
 
-body {
-  min-height: 100%;
-  color: var(--secondary-color);
-  font-family: 'Commissioner', sans-serif;
-  background-color: var(--background-color);
+html, body {
+    height: 100%;
+    background-color: var(--backgroundcolor);
 }
 
-.sr-only {
-  border: 0 !important;
-  clip: rect(1px, 1px, 1px, 1px) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  width: 1px !important;
-  white-space: nowrap !important;
+
+h1 {
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 96px;
 }
 
-.page-section {
-  padding: 12px 24px;
+h2 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 68px;
 }
 
-.page-section:last-of-type {
-  padding-bottom: 64px;
+h3 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 366px;
-  padding: 24px;
-  background-color: var(--surface-color);
-  border: 1px solid var(--stroke-color);
-  border-radius: 12px;
-  margin: 0 auto;
+h4 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 42px; 
 }
 
-.text-center {
-  text-align: center;
+h5 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;  
 }
 
-/* TIPOGRAFIA ----------------------*/
-
-.type-h1 {
-  font-weight: bold;
-  font-size: 80px;
-  line-height: 96px;
+h6 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
 }
 
-.type-h2 {
-  font-weight: bold;
-  font-size: 60px;
-  line-height: 68px;
+.body1, .subtitle1 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
 }
 
-.type-h3 {
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
+.body2, .subtitle2 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
 }
 
-.type-h4 {
-  font-weight: bold;
-  font-size: 34px;
-  line-height: 42px;
+.button {
+    font-family: 'comissioner';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
 }
 
-.type-h5 {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
+.caption {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
 }
 
-.type-h6 {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 28px;
+.overline {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
 }
 
-.type-body1,
-.type-subtitle1 {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+/*Layout----------------------*/
+
+section {
+    padding: 12px 24px;
 }
 
-.type-body2,
-.type-subtitle2 {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 22px;
+section .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 366px;
+    padding: 24px;
+    background-color: var(--surfacecolor);
+    border: 1px solid var(--strokecolor);
+    border-radius: 12px;
+    margin: 0 auto;
 }
 
-.type-button {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
+section:last-of-type {
+padding-bottom: 64px;
 }
 
-.type-caption {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
+/*Botões----------------------*/
+
+button.iconbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
 }
 
-.type-overline {
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 10px;
+button.btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px 8px 12px;
+    background-color: var(--backgroundcolor);
+    border-radius: 8px;
+    transition: background-color .4s ease;
 }
 
-/* BOTÕES ----------------------*/
-
-.icon-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  padding: 8px;
-  background-color: transparent;
-  color: inherit;
+button.btn-center svg path {
+    fill: var(--mediumemphasis);
 }
 
-.icon-btn > svg {
-  fill: currentColor;
+button.btn-center p{
+    margin-left: 8px;
 }
 
-.btn {
-  display: flex;
-  align-items: center;
-  padding: 8px 16px 8px 12px;
-  background-color: var(--background-color);
-  border-radius: 8px;
-  transition: background-color 0.4s ease;
-  cursor: pointer;
+button.btn-center:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    cursor: pointer;
 }
 
-.btn:hover {
-  background-color: rgba(0, 0, 0, 0.04);
+/*PADRÕES----------------------*/
+
+/*HEADER----------------------*/
+
+header {
+    width: 100%;
+    height: 288px;
+    background-image: url(/images/image-hero-desktop.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.btn svg {
-  --icon-size: 24px;
-  fill: var(--medium-emphasis);
-  width: var(--icon-size);
-  height: var(--icon-size);
+nav {
+    width: 100%;
+    height: 56px;
+    padding: 8px 12px 8px 20px;
+    background: linear-gradient(180deg, #000000 -95.62%, rgba(0, 0, 0, 0) 100%);
 }
 
-.btn > * + * {
-  margin-left: 8px;
+nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 366px;
+    margin: 0 auto;
 }
 
-.btn-center {
-  justify-content: center;
+nav h5 {
+    color: var(--primarycolor);
 }
 
-/* HEADER ----------------------*/
+/*HEADER----------------------*/
 
-.page-header {
-  width: 100%;
-  height: 288px;
-  background-image: url('/images/image-hero-desktop.jpg');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+/*PERFIL----------------------*/
+
+section.profile {
+    margin-top: -64px;
 }
 
-.navbar {
-  width: 100%;
-  height: 56px;
-  padding: 8px 12px 8px 20px;
-  color: var(--primary-color);
-  background: linear-gradient(180deg, #000000 -95.62%, rgba(0, 0, 0, 0) 100%);
+section.profile h5 {
+    padding: 8px 0 0 0;
 }
 
-.navbar-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 366px;
-  margin: 0 auto;
+section.profile h5, section.profile p {
+    text-align: center;
+}
+
+section.profile p {
+    color: var(--mediumemphasis);
+}
+
+section.profile .container {
+    gap: 16px;
+}
+
+.img-profile {
+    display: flex;
+    width: 100%;
+    height: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-profile svg {
+    transform: translateY(-50%);
 }
 
 /*PERFIL----------------------*/
 
-#profile-section {
-  margin-top: -64px;
+
+/*APOIADORES----------------------*/
+
+section.backers div.container {
+    padding: 0;
 }
 
-.profile-title {
-  padding: 8px 0 0 0;
-}
-
-.profile-description {
-  color: var(--medium-emphasis);
-}
-
+<<<<<<< HEAD
 #profile-section .container > * + * {
   margin-top: 16px;
+=======
+.backed-info {
+    padding: 16px 24px;
+>>>>>>> parent of aa59064 (sugestões de boas práticas)
 }
 
-.profile-img {
-  --img-size: 56px;
-  width: var(--img-size);
-  height: var(--img-size);
-  margin: calc((var(--img-size) / 2 + 25px) * -1) auto 0;
+.backed-info:not(:nth-child(3)) {
+border-bottom: 1px solid var(--strokecolor);
 }
 
-/* APOIADORES ----------------------*/
-
-#backers-section .container {
-  padding: 0;
+section.backers .backed-info:first-child {
+    padding-top: 24px;
 }
 
-.backers-info {
-  padding: 16px 24px;
+section.backers .backed-info:last-child {
+    padding-bottom: 24px;
 }
 
-.backers-info:first-of-type {
-  padding-top: 24px;
+section.backers h4, section.backers p {
+    text-align: center;
 }
 
-.backers-info:not(:last-child) {
-  border-bottom: 1px solid var(--stroke-color);
+section.backers p {
+    color: var(--mediumemphasis);
+    margin-top: 4px;
 }
 
-.backers-info:last-child {
-  padding-bottom: 24px;
-}
 
-.backers-info p {
-  color: var(--medium-emphasis);
-  margin-top: 4px;
-}
+/*APOIADORES----------------------*/
+
