@@ -234,7 +234,7 @@ body {
   color: var(--medium-emphasis);
 }
 
-.profile-section .container > * + * {
+#profile-section .container > * + * {
   margin-top: 16px;
 }
 
