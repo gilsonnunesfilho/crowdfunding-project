@@ -237,8 +237,13 @@ section.backers div.container {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #profile-section .container > * + * {
   margin-top: 16px;
+=======
+.backed-info {
+    padding: 16px 24px;
+>>>>>>> parent of aa59064 (sugestões de boas práticas)
 =======
 .backed-info {
     padding: 16px 24px;
