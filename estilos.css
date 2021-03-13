@@ -1,0 +1,227 @@
+/*CSS RESET----------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    border: none;
+    color: var(--secondarycolor);
+    font-family: 'Commissioner', sans-serif;
+}
+
+/*CSS RESET----------------------*/
+
+/*PADRÕES----------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primarycolor: #ffffff;
+    --acentcolor: #3cb4ab;
+    --acentcolorvariant: #157a74;
+    --secondarycolor: rgba(0, 0, 0, 0.87);
+    --mediumemphasis: rgba(0, 0, 0, 0.60);
+    --lowemphasis: rgba(0, 0, 0, 0.38);
+    --backgroundcolor: #fafafa;
+    --surfacecolor: #fff;
+    --strokecolor: rgba(0, 0, 0, 0.15);
+}
+
+html, body {
+    height: 100%;
+    background-color: var(--backgroundcolor);
+}
+
+
+h1 {
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 96px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 68px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 42px; 
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;  
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.body1, .subtitle1 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.body2, .subtitle2 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.button {
+    font-family: 'comissioner';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.caption {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.overline {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+/*Layout----------------------*/
+
+section {
+    padding: 12px 24px;
+}
+
+section .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 366px;
+    padding: 24px;
+    background-color: var(--surfacecolor);
+    border: 1px solid var(--strokecolor);
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+/*Botões----------------------*/
+
+button.iconbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+}
+
+button.btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px 8px 12px;
+    background-color: var(--backgroundcolor);
+    border-radius: 8px;
+    transition: background-color .4s ease;
+}
+
+button.btn-center svg path {
+    fill: var(--mediumemphasis);
+}
+
+button.btn-center p{
+    margin-left: 8px;
+}
+
+button.btn-center:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+}
+
+/*PADRÕES----------------------*/
+
+/*HEADER----------------------*/
+
+header {
+    width: 100%;
+    height: 288px;
+    background-image: url(/images/image-hero-desktop.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    width: 100%;
+    height: 56px;
+    padding: 8px 12px 8px 20px;
+    background: linear-gradient(180deg, #000000 -95.62%, rgba(0, 0, 0, 0) 100%);
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 366px;
+    margin: 0 auto;
+}
+
+nav h5 {
+    color: var(--primarycolor);
+}
+
+/*HEADER----------------------*/
+
+/*PERFIL----------------------*/
+
+section.profile {
+    margin-top: -64px;
+}
+
+section.profile h5 {
+    padding: 8px 0 0 0;
+}
+
+section.profile h5, section.profile p {
+    text-align: center;
+}
+
+section.profile p {
+    color: var(--mediumemphasis);
+}
+
+section.profile .container {
+    gap: 16px;
+}
+
+.img-profile {
+    display: flex;
+    width: 100%;
+    height: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-profile svg {
+    transform: translateY(-50%);
+}
+
+/*PERFIL----------------------*/
+
